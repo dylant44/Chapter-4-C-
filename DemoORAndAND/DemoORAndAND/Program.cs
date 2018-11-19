@@ -31,7 +31,7 @@ namespace DemoORAndAND
             }
             else
             {
-                WriteLine("Adelivery charge applies");
+                WriteLine("A delivery charge applies");
             }
 
         }
