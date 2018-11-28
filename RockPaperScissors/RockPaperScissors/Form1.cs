@@ -19,63 +19,83 @@ namespace RockPaperScissors
 
         private void btnRock_Click(object sender, EventArgs e)
         {
+            
+            string result = null;
             int randomNumber;
             Random ranNumberGenerator = new Random();
             randomNumber = ranNumberGenerator.Next(1, 4);
 
             if (randomNumber == 1)
             {
-                lblOutput.Text = "Tie! You both picked Rock";
+                result = "Tie!";
             }
-            else if(randomNumber == 2)
+            else if (randomNumber == 2)
             {
-                lblOutput.Text = "You Lose! They picked Paper";
+                result = "You Lose!";
             }
-            else if(randomNumber == 3)
+            else if (randomNumber == 3)
             {
-                lblOutput.Text = "You Win! They Picked Scissors";
+                result = "You Win!";
             }
+            DisplayCalculation(result);
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string result = null;
             int randomNumber;
             Random ranNumberGenerator = new Random();
             randomNumber = ranNumberGenerator.Next(1, 4);
 
             if (randomNumber == 1)
             {
-                lblOutput.Text = "You Win! They picked Rock";
+                result = "You Win!";
             }
             else if (randomNumber == 2)
             {
-                lblOutput.Text = "Tie! You both picked Paper";
+                result = "Tie!";
             }
             else if (randomNumber == 3)
             {
-                lblOutput.Text = "You Lose! They picked Scissors";
+                result = "You Lose!";
             }
+            DisplayCalculation(result);
         }
 
         private void button2_Click(object sender, EventArgs e)
+        {
+            string result = null;
+            int randomNumber;
+            Random ranNumberGenerator = new Random();
+            randomNumber = ranNumberGenerator.Next(1, 4);
+
+            if (randomNumber == 1)
+            {
+                result = "You Lose!";
+            }
+            else if (randomNumber == 2)
+            {
+                result = "You Win!";
+            }
+            else if (randomNumber == 3)
+            {
+                result = "Tie!";
+            }
+            DisplayCalculation(result);
+        }
+        private void DisplayCalculation(string result)
         {
             int randomNumber;
             Random ranNumberGenerator = new Random();
             randomNumber = ranNumberGenerator.Next(1, 4);
 
-            if (randomNumber == 1)
+            if (btnRock_Click = true && randomNumber == 1)
             {
-                lblOutput.Text = "You Lose! They Picked Rock";
+
             }
-            else if (randomNumber == 2)
-            {
-                lblOutput.Text = "You Win! They picked Paper";
-            }
-            else if (randomNumber == 3)
-            {
-                lblOutput.Text = "Tie! You both picked Scissors";
-            }
+            lblOutput.Text = result;
         }
+         
     }
 }

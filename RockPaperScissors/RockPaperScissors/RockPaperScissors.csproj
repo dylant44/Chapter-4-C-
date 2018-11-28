@@ -88,5 +88,8 @@
   <ItemGroup>
     <None Include="Resources\Scissors.jfif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TheRock.jfif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
